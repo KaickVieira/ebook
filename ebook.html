@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ebook.css">
+    <!--Box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="cover cover-left"></div>
+        <div class="cover cover-right"></div>
+
+        <div class="book">
+           <!--Profile page-->
+            <div class="book-page page-left">
+                <div class="profile-page">
+                    <h1>Página 0</h1>
+                  
+                </div>
+            </div>
+
+            <!-- Page 1 & 2 -->
+            <div class="book-page page-right turn" id="turn-1">
+                <!--page 1-->
+                <div class="page-front">
+                    <h1 class="title">Página 1</h1>
+                    
+                    <span class="number-page">1</span>
+
+                    <!-- Next Button-->
+                    <span class="nextprev-btn" data-page="turn-1">
+                        <i class='bx bx-chevron-right' ></i>
+                    </span>
+                </div>
+
+                <!--Page 2-->
+                <div class="page-back">
+                    <h1 class="title">Página 2</h1>
+
+                    <span class="number-page">2</span>
+
+                     <!-- Prev Button-->
+                     <span class="nextprev-btn back" data-page="turn-1">
+                        <i class='bx bx-chevron-left'></i>
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- Page 3 & 4 -->
+            <div class="book-page page-right turn" id="turn-2">
+              <!--Page 3-->
+                <div class="page-front">
+                    <img src="pags/pag3.png" alt="">
+
+                    <span class="number-page">3</span>
+                 
+                    <!-- Next Button-->
+                     <span class="nextprev-btn" data-page="turn-2">
+                        <i class='bx bx-chevron-right' ></i>
+                    </span>
+
+                </div>
+  
+                <!--Page 4-->
+                <div class="page-back">
+                    <img src="pags/pag4.png" alt="">
+
+                    <span class="number-page">4</span>
+
+                    <!-- Prev Button-->
+                    <span class="nextprev-btn back" data-page="turn-2">
+                        <i class='bx bx-chevron-left'></i>
+                    </span>
+                </div>
+            </div> 
+
+            <!-- Page 5 & 6 -->
+            <div class="book-page page-right turn" id="turn-3">
+                <!--Page 5-->
+                  <div class="page-front">
+                      <img src="pags/pag5.png" alt="">
+
+                      <span class="number-page">5</span>
+                   
+                      <!-- Next Button-->
+                       <span class="nextprev-btn" data-page="turn-3">
+                          <i class='bx bx-chevron-right'></i>
+                      </span>
+                  </div>
+   
+                  <!--Page 6-->
+                  <div class="page-back">
+                     <img src="pags/pag6.png" alt="">
+  
+                      <span class="number-page">6</span>
+  
+                      <!-- Prev Button-->
+                      <span class="nextprev-btn back" data-page="turn-3">
+                          <i class='bx bx-chevron-left'></i>
+                      </span>
+                  </div>     
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
