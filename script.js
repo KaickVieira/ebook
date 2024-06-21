@@ -22,11 +22,40 @@ pageTurnBtn.forEach((el, index)  => {
 
 });
 
-
-// create reverse index function
 const pages = document.querySelectorAll('.book-page');
 let totalPages = pages.length;
 let pageNumber = 0;
+
+//function for next page
+function nextIndex() {
+    pageNumber++;
+    if (pageNumber >= totalPages) {
+        pageNumber = 0;
+    }
+    showPage(pageNumber)
+}
+
+//function for previous page
+function previousIndex() {
+    pageNumber--;
+    if (pageNumber < 0){
+        pageNumber = totalPages - 1;
+    }
+    showPage(pageNumber);
+}
+
+//function for show page
+function showPage(index) {
+    pages.forEach((page, pageIndex) => {
+        if (pageIndex === index) {
+            page.style.display = 'block';
+        } else {
+            page.style.display = 'none'
+        }
+    })
+}
+
+
 
 function reverseIndex() {
     pageNumber--;
@@ -34,6 +63,7 @@ function reverseIndex() {
         pageNumber = totalPages - 1;
     }
 }
+
 
 //opening animation
 const coverRight = document.querySelector('.cover.cover-right');
