@@ -1,3 +1,4 @@
+/*
 //turn pages when click next or prev button
 const pageTurnBtn = document.querySelectorAll('.nextprev-btn');
 
@@ -56,16 +57,38 @@ function showPage(index) {
     })
 }
 
-
-/*
-//function close book
-function closeBook() {
-    const cover = document.querySelector('.cover .cover-left');
-
-    if (cover && !cover.classList.contains('turn')) {
-        pages.style.display = 'block';
-    } else {
-        pages.style.display = 'none'
+function reverseIndex() {
+    pageNumber--;
+    if (pageNumber < 0) {
+        pageNumber = totalPages - 1;
     }
 }
+
+//opening animation
+const coverRight = document.querySelector('.cover.cover-right');
+
+//opening animation (cover right animation)
+setTimeout(() => {
+    coverRight.classList.add('turn');
+}, 2100)
+
+setTimeout(() => {
+    coverRight.style.zIndex = -1;
+}, 2800)
+
+
+
+//opening animation (cover right animation)
+pages.forEach((_, index) => {
+    setTimeout(() => {
+        reverseIndex();
+        pages[pageNumber].classList.remove('turn');
+        setTimeout(() => {
+            reverseIndex();
+            pages[pageNumber].style.zIndex = 10 + index;
+        }, 500)
+    }, (index + 1) * 200 + 2100)
+})
+
+ 
 */
