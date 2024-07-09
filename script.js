@@ -11,7 +11,7 @@ pageTurnBtn.forEach((el, index)  => {
             setTimeout(() => {
                 pageTurn.style.zIndex = 20 - index;
             }, 500)
-        }
+        } 
         else {
             pageTurn.classList.add('turn');
             setTimeout(() => {
@@ -26,6 +26,15 @@ const pages = document.querySelectorAll('.book-page');
 const book = document.querySelectorAll('.book')
 let totalPages = pages.length;
 let pageNumber = 0;
+
+function openBook() {
+    const cover = document.querySelector('.cover .cover-left .turn')
+    if (cover.document.contains('.turn')) {
+        book.style.display = 'flex'
+    } else {
+    book.style.display = 'none'
+    }
+}
 
 //function for next page
 function nextIndex() {
