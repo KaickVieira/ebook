@@ -27,6 +27,7 @@ const book = document.querySelectorAll('.book')
 let totalPages = pages.length;
 let pageNumber = 0;
 
+
 //function for next page
 function nextIndex() {
     pageNumber++;
@@ -68,4 +69,4 @@ function closeBook() {
         pages.style.display = 'none'
     }
 }
-*/
+*/ 
