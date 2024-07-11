@@ -158,6 +158,9 @@ body {
     left: 1.5rem;
 }
 
+#turn-0 .nextprev-btn:hover {
+    color: var(--white-color);
+}
 
 /*pages*/
 
