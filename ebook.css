@@ -79,6 +79,7 @@ body {
     height: 100%;
     display: none;
     perspective: 250rem;
+    z-index: 30;
 }
 
 
