@@ -4,7 +4,6 @@ const pageTurnBtn = document.querySelectorAll('.nextprev-btn');
 const pages = document.querySelectorAll('.book-page');
 const book = document.querySelector('.book')
 const cover = document.getElementById('turn-0')
-const turns = document.getElementById('turn-2')
 let totalPages = pages.length;
 let pageNumber = 0;
 
@@ -27,6 +26,7 @@ pageTurnBtn.forEach((el, index)  => {
             }, 500);
         }
         openBook(cover);
+
     }
 
 });
@@ -36,9 +36,11 @@ function openBook(el) {
     if (el.classList.contains('turn')) {
             setTimeout(() => {
                 book.style.display = 'flex'
-         }, 900)
+         }, 850)
     }
 }
+
+
 
 //function for next page
 function nextIndex() {
