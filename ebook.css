@@ -171,20 +171,20 @@ img {
 }
 
 
-#turn-2 {z-index: 20;}
-#turn-3 {z-index: 18}
-#turn-4 {z-index: 16;}
-#turn-5 {z-index: 14;}
-#turn-6 {z-index: 12;}
-#turn-7 {z-index: 10;}
-#turn-8 {z-index: 8;}
-#turn-9 {z-index: 6;}
-#turn-10 {z-index: 4;}
-#turn-11 {z-index: 2;}
-#turn-12 {z-index: 0;}
-#turn-13 {z-index: -2;}
-#turn-14 {z-index: -4;}
-#turn-15 {z-index: -6;}
-#turn-16 {z-index: -8;}
+#turn-2 {z-index: 13;}
+#turn-3 {z-index: 11}
+#turn-4 {z-index: 9;}
+#turn-5 {z-index: 7;}
+#turn-6 {z-index: 5;}
+#turn-7 {z-index: 3;}
+#turn-8 {z-index: 1;}
+#turn-9 {z-index: -1;}
+#turn-10 {z-index: -3;}
+#turn-11 {z-index: -5;}
+#turn-12 {z-index: -7;}
+#turn-13 {z-index: -9;}
+#turn-14 {z-index: -11;}
+#turn-15 {z-index: -13;}
+#turn-16 {z-index: -15;}
 
 
