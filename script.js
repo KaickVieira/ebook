@@ -31,7 +31,7 @@ pageTurnBtn.forEach((el, index)  => {
 
 });
 
-//fuction for show book page
+//função para mostrar a página do livro ao abrir
 function openBook(el) {
     if (el.classList.contains('turn')) {
             setTimeout(() => {
@@ -41,7 +41,7 @@ function openBook(el) {
 }
 
 
-//function for next page
+//função para avançar para a próxima página
 function nextIndex() {
     pageNumber++;
     if (pageNumber >= totalPages) {
@@ -50,7 +50,7 @@ function nextIndex() {
     showPage(pageNumber)
 }
 
-//function for previous page
+//função para voltar para a página anterior
 function previousIndex() {
     pageNumber--;
     if (pageNumber < 0){
@@ -59,7 +59,7 @@ function previousIndex() {
     showPage(pageNumber);
 }
 
-//function for show page
+//função para mostrar a página do livro
 function showPage(index) {
     pages.forEach((page, pageIndex) => {
         if (pageIndex === index) {
@@ -70,22 +70,5 @@ function showPage(index) {
     })
 }
 
-/*
-const turn2 = document.getElementById('turn-2')
-const turn3 = document.getElementById('turn-3')
-const turn4 = document.getElementById('turn-4')
-const turn5 = document.getElementById('turn-5')
-const turn6 = document.getElementById('turn-6')
-const turn7 = document.getElementById('turn-7')
-const turn8 = document.getElementById('turn-8')
-const turn9 = document.getElementById('turn-9')
-const turn10 = document.getElementById('turn-10')
-const turn11 = document.getElementById('turn-11')
-const turn12 = document.getElementById('turn-12')
-const turn13 = document.getElementById('turn-13')
-const turn14 = document.getElementById('turn-14')
-const turn15 = document.getElementById('turn-15')
-const turn16 = document.getElementById('turn-16')
-*/
 
 
